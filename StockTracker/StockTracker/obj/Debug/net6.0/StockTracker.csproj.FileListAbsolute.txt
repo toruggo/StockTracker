@@ -1,0 +1,15 @@
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\bin\Debug\net6.0\StockTracker.exe
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\bin\Debug\net6.0\StockTracker.deps.json
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\bin\Debug\net6.0\StockTracker.runtimeconfig.json
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\bin\Debug\net6.0\StockTracker.dll
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\bin\Debug\net6.0\StockTracker.pdb
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.csproj.AssemblyReference.cache
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.AssemblyInfoInputs.cache
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.AssemblyInfo.cs
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.csproj.CoreCompileInputs.cache
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.dll
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\refint\StockTracker.dll
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.pdb
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\StockTracker.genruntimeconfig.cache
+C:\Users\AMD\Desktop\VHProjects\StockTracker\StockTracker\obj\Debug\net6.0\ref\StockTracker.dll
