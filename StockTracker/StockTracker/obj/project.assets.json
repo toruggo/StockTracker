@@ -8,27 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\AMD\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AMD\\Desktop\\VHProjects\\StockTracker\\StockTracker\\StockTracker.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\StockTracker.csproj",
       "projectName": "StockTracker",
-      "projectPath": "C:\\Users\\AMD\\Desktop\\VHProjects\\StockTracker\\StockTracker\\StockTracker.csproj",
-      "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AMD\\Desktop\\VHProjects\\StockTracker\\StockTracker\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\StockTracker.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AMD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net6.0": {

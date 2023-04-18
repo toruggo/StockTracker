@@ -15,9 +15,6 @@ public class EmailConfig
     public string SellMessageTemplate { get; set; }
     public string SmtpServer { get; set; }
     public int SmtpPort { get; set; }
-
-    
-
 }
 
 public class EmailSender : IMessageSender
@@ -61,9 +58,10 @@ public class EmailSender : IMessageSender
 
     private void SendEmail(string subject, string body)
     {
-        MailMessage mailMessage = new MailMessage();
-
-        mailMessage.From = new MailAddress(_emailConfig.SenderEmailAddress);
+        MailMessage mailMessage = new MailMessage
+        {
+            From = new MailAddress(_emailConfig.SenderEmailAddress)
+        };
         mailMessage.To.Add(_emailConfig.RecipientEmailAdress);
 
         byte[] bytes = Encoding.Default.GetBytes(body);
@@ -76,7 +74,7 @@ public class EmailSender : IMessageSender
         _smtpClient.Send(mailMessage);
     }
 
-    public string renderStringTemplate(string template, string stockSymbol, decimal stockPrice)
+    public string RenderStringTemplate(string template, string stockSymbol, decimal stockPrice)
     {
         template = template.Replace("{RecipientName}", _emailConfig.RecipientName)
                            .Replace("{StockSymbol}", stockSymbol)
@@ -84,15 +82,15 @@ public class EmailSender : IMessageSender
         return template;
     }
 
-    public void sendBuyMessage(string stockSymbol, decimal stockPrice)
+    public void SendBuyMessage(string stockSymbol, decimal stockPrice)
     {
-        string messageBody = renderStringTemplate(_emailConfig.BuyMessageTemplate, stockSymbol, stockPrice);
+        string messageBody = RenderStringTemplate(_emailConfig.BuyMessageTemplate, stockSymbol, stockPrice);
         SendEmail("Compre agora!", messageBody);
     }
 
-    public void sendSellMessage(string stockSymbol, decimal stockPrice)
+    public void SendSellMessage(string stockSymbol, decimal stockPrice)
     {
-        string messageBody = renderStringTemplate(_emailConfig.SellMessageTemplate, stockSymbol, stockPrice);
+        string messageBody = RenderStringTemplate(_emailConfig.SellMessageTemplate, stockSymbol, stockPrice);
         SendEmail("Venda agora!", messageBody);
     }
 }

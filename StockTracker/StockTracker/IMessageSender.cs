@@ -2,6 +2,6 @@
 
 public interface IMessageSender
 {
-    public void sendBuyMessage(string stockSymbol, decimal stockPrice);
-    public void sendSellMessage(string stockSymbol, decimal stockPrice);
+    public void SendBuyMessage(string stockSymbol, decimal stockPrice);
+    public void SendSellMessage(string stockSymbol, decimal stockPrice);
 }

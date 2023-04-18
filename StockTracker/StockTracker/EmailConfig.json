@@ -2,7 +2,7 @@
 	"RecipientName": "Amanda",
 	"SenderEmailAddress": "vhugo_08@yahoo.com",
 	"SenderEmailPassword": "gocpfrhocymnacay",
-	"RecipientEmailAdress": "allangarcia@usp.br",
+	"RecipientEmailAdress": "vhugoac@usp.br",
 	"BuyMessageTemplate": "Hey, {RecipientName}. The stock {StockSymbol} is currently priced at R${StockPrice}. We suggest a buy operation.",
 	"SellMessageTemplate": "Hey, {RecipientName}. The stock {StockSymbol} is currently priced at R${StockPrice}. We suggest a sell operation.",
 	"SmtpServer": "smtp.mail.yahoo.com",
