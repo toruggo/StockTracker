@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\StockTracker.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\StockTracker\\StockTracker\\StockTracker\\StockTracker.csproj",
       "projectName": "StockTracker",
-      "projectPath": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\StockTracker.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\StockTracker\\StockTracker\\StockTracker\\StockTracker.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\StockTracker-main\\StockTracker\\StockTracker\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\StockTracker\\StockTracker\\StockTracker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

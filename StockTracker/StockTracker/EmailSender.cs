@@ -41,11 +41,6 @@ public class EmailSender : IMessageSender
             throw new FileNotFoundException();
         }
 
-        //JsonSerializerSettings settings = new JsonSerializerSettings
-        //{
-        //    ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor, // Permite o uso de construtores não públicos
-        //};
-
         string jsonText = File.ReadAllText(filePath);
         EmailConfig? emailConfig = JsonSerializer.Deserialize<EmailConfig>(jsonText);
 
