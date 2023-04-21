@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 public class StockTracker
 {
@@ -19,20 +20,6 @@ public class StockTracker
         _messageSender = messageSender;
     }
 
-    public int verifyPriceBounds(decimal price)
-    {
-        if(price >= UpperBound)
-        {
-            return 1;
-        }
-        else if(price <= LowerBound)
-        {
-            return 2;
-        }
-        return -1;
-    }
-
-    // faz chamadas intervaladas e notifica usuario
     public async Task TrackStockAsync()
     {
         bool outOfBounds = false;
@@ -41,32 +28,33 @@ public class StockTracker
             Timer timer = new((state) =>
             {
                 decimal currentPrice = _stockApi.GetStockPrice(StockSymbol);
+                Console.WriteLine("[" + DateTime.Now + "] - " + StockSymbol + ": " + currentPrice);
 
                 if (currentPrice >= UpperBound)
                 {
                     // so manda mensagem na primeira vez que sai do intervalo
                     if (!outOfBounds)
+                    { 
                         _messageSender.SendSellMessage(StockSymbol, currentPrice);
+                        Console.WriteLine("Crossed UpperBound. Sell email sent.");
+                    }
                     outOfBounds = true;
-
-                    Console.WriteLine("Disparei email de venda!");
                 }
                 else if (currentPrice <= LowerBound)
                 {
-                    if (!outOfBounds)
+                    if (!outOfBounds) 
+                    { 
                         _messageSender.SendBuyMessage(StockSymbol, currentPrice);
+                        Console.WriteLine("Crossed LowerBound. Buy email sent!");
+                    }
                     outOfBounds = true;
-                    Console.WriteLine("Disparei email de compra!");
-
                 }
                 // reseta quando volta pro intervalo
-                else 
+                else if(outOfBounds)
                 { 
-                    Console.WriteLine("Voltou pro intervalo normal.");
+                    Console.WriteLine("Back to monitoring interval.");
                     outOfBounds = false;
                 }
-
-                Console.WriteLine("Chamou! O preco agora eh " + currentPrice);
             }, null, 0, 30000);
 
             await Task.Delay(Timeout.Infinite);

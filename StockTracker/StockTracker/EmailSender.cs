@@ -80,12 +80,12 @@ public class EmailSender : IMessageSender
     public void SendBuyMessage(string stockSymbol, decimal stockPrice)
     {
         string messageBody = RenderStringTemplate(_emailConfig.BuyMessageTemplate, stockSymbol, stockPrice);
-        SendEmail("Compre agora!", messageBody);
+        SendEmail("Buy " + stockSymbol + " now!", messageBody);
     }
 
     public void SendSellMessage(string stockSymbol, decimal stockPrice)
     {
         string messageBody = RenderStringTemplate(_emailConfig.SellMessageTemplate, stockSymbol, stockPrice);
-        SendEmail("Venda agora!", messageBody);
+        SendEmail("Sell " + stockSymbol + " now!", messageBody);
     }
 }
