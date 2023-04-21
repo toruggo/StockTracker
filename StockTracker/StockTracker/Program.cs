@@ -5,7 +5,6 @@ using System.Text.Json;
 string currentDirectory = Directory.GetCurrentDirectory();
 string configDirectory = Path.GetFullPath(Path.Combine(currentDirectory, @"..\..\..\"));
 
-
 var sender = EmailSender.fromConfigurationFile(configDirectory + "\\EmailConfig.json");
 TwelveDataAPI twelveDataAPI = new TwelveDataAPI("6b2237a02d264d7abde364c863df906d");
 
@@ -20,14 +19,9 @@ if(inputTokens.Length < 3)
 // para ler decimais separados por ponto e nao virgula
 Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-
 string stockSymbol = inputTokens[0];
 decimal lowerBound = Convert.ToDecimal(inputTokens[1]);
 decimal upperBound = Convert.ToDecimal(inputTokens[2]);
-
-Console.WriteLine(lowerBound + " " + upperBound);
-
-//return;
 
 StockTracker stockTracker = new StockTracker(stockSymbol, lowerBound, upperBound, twelveDataAPI, sender);
 

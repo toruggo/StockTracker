@@ -59,9 +59,6 @@ public class EmailSender : IMessageSender
         };
         mailMessage.To.Add(_emailConfig.RecipientEmailAdress);
 
-        byte[] bytes = Encoding.Default.GetBytes(body);
-        body = Encoding.UTF8.GetString(bytes);
-
         mailMessage.Subject = subject;
         mailMessage.Body = body;
 
@@ -73,7 +70,7 @@ public class EmailSender : IMessageSender
     {
         template = template.Replace("{RecipientName}", _emailConfig.RecipientName)
                            .Replace("{StockSymbol}", stockSymbol)
-                           .Replace("{StockPrice}", stockPrice.ToString());
+                           .Replace("{StockPrice}", stockPrice.ToString("0.###"));
         return template;
     }
 
