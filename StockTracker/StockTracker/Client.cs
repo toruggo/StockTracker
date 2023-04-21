@@ -23,8 +23,8 @@ class Client
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
         string stockSymbol = args[0];
-        decimal lowerBound = Convert.ToDecimal(args[1]);
-        decimal upperBound = Convert.ToDecimal(args[2]);
+        decimal upperBound = Convert.ToDecimal(args[1]);
+        decimal lowerBound = Convert.ToDecimal(args[2]);
 
         StockTracker stockTracker = new StockTracker(stockSymbol, lowerBound, upperBound, twelveDataAPI, sender);
 
