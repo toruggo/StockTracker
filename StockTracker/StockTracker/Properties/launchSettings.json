@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StockTracker": {
+      "commandName": "Project",
+      "commandLineArgs": "PETR4 0 1000\r\n"
+    }
+  }
+}
